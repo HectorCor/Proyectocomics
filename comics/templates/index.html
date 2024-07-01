@@ -19,14 +19,14 @@
     </div>
 
     <div class="navbar">
-        <a href="index.html">Inicio</a>
+        <a href="{% url 'index' %}">Inicio</a>
         <a href="{% url 'nosotros' %}">Nosotros</a>
-        <a href="personajes.html">Personajes</a>
+        <a href="{% url 'personajes' %}">Personajes</a>
         <a href="{% url 'productos' %}">Productos</a>
         <div class="register-button">
-          <a href="registro.html">Regístrate</a>
+          <a href="{% url 'registro' %}">Regístrate</a>
         </div>
-        <a href="carrito.html"><img src="assets/img/carrito.png" alt="carrito"><span id="cuenta-carrito">0</span></a>
+        <a href="{% url 'carrito' %}"><img src="{% static 'assets/img/carrito.png' %}" alt="carrito"><span id="cuenta-carrito">0</span></a>
       </div>
 
     <div class="container-fluid text-center">

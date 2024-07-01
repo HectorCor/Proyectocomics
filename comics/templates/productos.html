@@ -20,12 +20,12 @@
   <header>
     <nav>
       <div>
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="personajes.html">Personajes</a>
-        <a href="productos.html">Productos</a>
+        <a href="{% url 'index' %}">Inicio</a>
+        <a href="{% url 'nosotros' %}">Nosotros</a>
+        <a href="{% url 'personajes' %}">Personajes</a>
+        <a href="{% url 'productos' %}">Productos</a>
         <div class="register-button">
-          <a href="carrito.html" id="cart"><img src="assets/img/carrito.png" alt=""><span
+          <a href="{% url 'carrito' %}" id="cart"><img src="{% static 'assets/img/carrito.png' %}" alt=""><span
               id="cuenta-carrito">0</span></a>
         </div>
     </nav>
